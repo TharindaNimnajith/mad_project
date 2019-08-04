@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuManagementActivity" >
+    tools:context=".FoodListActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                     android:background="@drawable/chocolate"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="crud">
+                    android:onClick="buy">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                     android:background="@drawable/hotdog"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="crud">
+                    android:onClick="buy">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                     android:background="@drawable/cupcakes"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="crud">
+                    android:onClick="buy">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                     android:background="@drawable/burgerbuns"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="crud">
+                    android:onClick="buy">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                     android:background="@drawable/milkbread"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="crud">
+                    android:onClick="buy">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -148,25 +148,5 @@
             </RelativeLayout>
         </ScrollView>
     </RelativeLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="735dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="55dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="add"
-        android:src="@drawable/add"
-        app:backgroundTint="#26379C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

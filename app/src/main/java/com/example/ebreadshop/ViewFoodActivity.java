@@ -2,29 +2,14 @@ package com.example.ebreadshop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
-public class MenuManagementActivity extends AppCompatActivity {
-
+public class ViewFoodActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_management);
-
-        Log.i("Lifecycle", "OnCreate() invoked");
-    }
-
-    public void add(View view) {
-        Intent intent = new Intent(MenuManagementActivity.this, AddFoodItemActivity.class);
-        startActivity(intent);
-    }
-
-    public void crud(View view) {
-        Intent intent = new Intent(MenuManagementActivity.this, CRUDFoodActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_view_food);
     }
 
     @Override

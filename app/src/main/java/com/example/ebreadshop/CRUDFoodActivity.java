@@ -2,29 +2,49 @@ package com.example.ebreadshop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
-public class MenuManagementActivity extends AppCompatActivity {
-
+public class CRUDFoodActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_management);
-
-        Log.i("Lifecycle", "OnCreate() invoked");
+        setContentView(R.layout.activity_crud_food);
     }
 
-    public void add(View view) {
-        Intent intent = new Intent(MenuManagementActivity.this, AddFoodItemActivity.class);
+    public void cancel(View view) {
+        Intent intent = new Intent(CRUDFoodActivity.this, MenuManagementActivity.class);
         startActivity(intent);
     }
 
-    public void crud(View view) {
-        Intent intent = new Intent(MenuManagementActivity.this, CRUDFoodActivity.class);
+    public void update(View view) {
+        Intent intent = new Intent(CRUDFoodActivity.this, MenuManagementActivity.class);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Item Details Updated Successfully";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+
         startActivity(intent);
+        toast.show();
+    }
+
+    public void delete(View view) {
+        Intent intent = new Intent(CRUDFoodActivity.this, MenuManagementActivity.class);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Item Deleted Successfully";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+
+        startActivity(intent);
+        toast.show();
     }
 
     @Override

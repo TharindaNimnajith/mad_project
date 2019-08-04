@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddFoodItemActivity"></activity>
+        <activity android:name=".ViewFoodActivity"></activity>
+        <activity android:name=".CRUDFoodActivity" />
+        <activity android:name=".FoodListActivity" />
+        <activity android:name=".AddFoodItemActivity" />
         <activity android:name=".MenuManagementActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

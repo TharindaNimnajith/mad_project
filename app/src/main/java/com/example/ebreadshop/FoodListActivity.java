@@ -7,23 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class MenuManagementActivity extends AppCompatActivity {
-
+public class FoodListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_management);
-
-        Log.i("Lifecycle", "OnCreate() invoked");
+        setContentView(R.layout.activity_food_list);
     }
 
-    public void add(View view) {
-        Intent intent = new Intent(MenuManagementActivity.this, AddFoodItemActivity.class);
-        startActivity(intent);
-    }
-
-    public void crud(View view) {
-        Intent intent = new Intent(MenuManagementActivity.this, CRUDFoodActivity.class);
+    public void buy(View view) {
+        Intent intent = new Intent(FoodListActivity.this, ViewFoodActivity.class);
         startActivity(intent);
     }
 
