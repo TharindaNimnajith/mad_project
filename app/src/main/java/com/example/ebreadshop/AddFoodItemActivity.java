@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
@@ -17,6 +18,12 @@ public class AddFoodItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_food_item);
 
         Log.i("Lifecycle", "OnCreate() invoked");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     public void cancel(View view) {
