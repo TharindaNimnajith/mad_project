@@ -2,6 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:appname="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/signout"
-        android:title="@string/signout"
+        android:title="@string/sign_out"
         appname:showAsAction="never" />
 </menu>

@@ -85,4 +85,9 @@ public class AddFoodItemActivity extends AppCompatActivity {
 
         Log.i("Lifecycle", "onDestroy() invoked");
     }
+
+    public void test(View view) {
+        Intent intent = new Intent(AddFoodItemActivity.this, FoodListActivity.class);
+        startActivity(intent);
+    }
 }

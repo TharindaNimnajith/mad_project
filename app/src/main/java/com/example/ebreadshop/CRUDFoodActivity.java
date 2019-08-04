@@ -15,6 +15,8 @@ public class CRUDFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crud_food);
+
+        Log.i("Lifecycle", "OnCreate() invoked");
     }
 
     @Override
