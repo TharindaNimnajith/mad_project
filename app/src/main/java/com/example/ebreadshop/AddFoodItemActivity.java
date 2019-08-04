@@ -2,8 +2,12 @@ package com.example.ebreadshop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 public class AddFoodItemActivity extends AppCompatActivity {
 
@@ -13,6 +17,24 @@ public class AddFoodItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_food_item);
 
         Log.i("Lifecycle", "OnCreate() invoked");
+    }
+
+    public void cancel(View view) {
+        Intent intent = new Intent(AddFoodItemActivity.this, MenuManagementActivity.class);
+        startActivity(intent);
+    }
+
+    public void addItem(View view) {
+        Intent intent = new Intent(AddFoodItemActivity.this, MenuManagementActivity.class);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Item Added Successfully";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+
+        startActivity(intent);
+        toast.show();
     }
 
     @Override

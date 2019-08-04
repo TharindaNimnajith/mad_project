@@ -39,6 +39,7 @@
                         android:textAllCaps="true"
                         android:textColor="#fff"
                         android:textSize="20sp" />
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -143,7 +144,7 @@
         android:layout_marginBottom="55dp"
         android:clickable="true"
         android:focusable="true"
-        android:onClick="send"
+        android:onClick="add"
         android:src="@drawable/add"
         app:backgroundTint="#26379C"
         app:layout_constraintBottom_toBottomOf="parent"

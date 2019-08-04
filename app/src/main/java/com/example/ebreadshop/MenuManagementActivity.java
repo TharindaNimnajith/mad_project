@@ -17,7 +17,7 @@ public class MenuManagementActivity extends AppCompatActivity {
         Log.i("Lifecycle", "OnCreate() invoked");
     }
 
-    public void send(View view) {
+    public void add(View view) {
         Intent intent = new Intent(MenuManagementActivity.this, AddFoodItemActivity.class);
         startActivity(intent);
     }
