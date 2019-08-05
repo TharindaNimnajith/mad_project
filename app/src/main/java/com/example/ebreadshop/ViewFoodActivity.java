@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -22,8 +21,8 @@ public class ViewFoodActivity extends AppCompatActivity {
         Log.i("Lifecycle", "OnCreate() invoked");
 
         //Get the widgets reference from XML layout
-        final TextView tv = findViewById(R.id.tv);
-        NumberPicker np = findViewById(R.id.np);
+        final TextView tv = findViewById(R.id.unit_price);
+        NumberPicker np = findViewById(R.id.qty_value_);
 
         //Set TextView text color
         //tv.setTextColor(Color.parseColor("#ffd32b3b"));

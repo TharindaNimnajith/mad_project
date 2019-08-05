@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">eBread Shop - Menu Management</string>
+    <string name="app_name">eBread Shop</string>
     <string name="add_new_food_item">Add New Food Item</string>
     <string name="chocolate_cake">Chocolate Cake</string>
     <string name="burger_bun">Burger Bun</string>
@@ -7,7 +7,7 @@
     <string name="burger_buns">Burger Buns</string>
     <string name="milk_bread">Milk Bread</string>
     <string name="discount">Discount</string>
-    <string name="price">Price</string>
+    <string name="price">Unit Price</string>
     <string name="description">Description</string>
     <string name="upload_an_image">Upload an Image</string>
     <string name="cancel">Cancel</string>
